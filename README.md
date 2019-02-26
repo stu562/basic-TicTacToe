@@ -8,5 +8,6 @@ Todo:
 
 #scoreboard
 [x]functional score board
+[ ]create a user defined win limit
 [ ]alert box with reset button
 [ ]make it track automatically without a button 
