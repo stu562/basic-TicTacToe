@@ -38,3 +38,13 @@ function resetBoard(){
   document.getElementsByClassName('currentscore')[0].innerText = `Current Score is ${score.player1} to ${score.player2}`;
   alert('Scores were reset!');
 }
+
+function togglePiece(){
+  //places x or o in whereever it is clicked
+  return 'O';
+}
+
+function playerTurn(){
+  //update and display whose turn it is 
+  document.getElementsByClassName('playerTurn')[0].innerText = `It's ${togglePiece()} turn!`
+}
