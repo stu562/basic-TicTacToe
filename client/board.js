@@ -1,36 +1,41 @@
-var buttons = {
+var selectors = {
   player1Button: document.getElementById('player1'),
   player2Button: document.getElementById('player2'),
   resetButton: document.getElementById('reset'),
+  numInput: document.querySelector("input[type='number']"),
 }
 
 var score = {player1:0,
               player2:0,
+              winningScore:5,
             }
+selectors.numInput.addEventListener('change', function(){
+  score.winningScore = Number(this.value);
+})
 
-buttons.player1Button.addEventListener('click', function(){
+selectors.player1Button.addEventListener('click', function(){
   score.player1++;
   document.getElementsByClassName('currentscore')[0].innerText = `Current Score is ${score.player1} to ${score.player2}`;
   checkWinner();
 });
 
-buttons.player2Button.addEventListener('click', function(){
+selectors.player2Button.addEventListener('click', function(){
   score.player2++;
   document.getElementsByClassName('currentscore')[0].innerText = `Current Score is ${score.player1} to ${score.player2}`;
   checkWinner();
 });
 
-buttons.resetButton.addEventListener('click', function(){
+selectors.resetButton.addEventListener('click', function(){
   resetBoard();
 });
 
 function checkWinner(){
-  if (score.player1 === 5){
+  if (score.player1 === score.winningScore){
     // alert('Player 1 is the winner');
-    confirm("resetboard?");
+    confirm("Player 1 is the winner! Play again?");
     resetBoard();
-  } else if (score.player2 === 5) {
-    alert('Player 2 is the winner');
+  } else if (score.player2 === score.winningScore) {
+    confirm('Player 2 is the winner! Play again?');
     resetBoard();
   }
 }
@@ -38,9 +43,10 @@ function checkWinner(){
 function resetBoard(){
   score = { player1:0,
     player2:0,
+    winningScore:5,
   }
+  document.querySelector('input').value = "5";
   document.getElementsByClassName('currentscore')[0].innerText = `Current Score is ${score.player1} to ${score.player2}`;
-  alert('Scores were reset!');
 }
 
 function togglePiece(){
