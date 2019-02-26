@@ -7,41 +7,42 @@
     <title>TTT board</title>
     <link rel="stylesheet" type="text/css" href="board.css">
   </head>
-  <script type="text/javascript" src="board.js"></script>
+
   <body>
     <div class="scoreboard">
       <div>
-      <h1>Current Score is: 0 to 0 </h1>
+        <h1>Current Score is: 0 to 0 </h1>
     </div>
     <input type="number">
-    <button class="player1">Player 1</button>
-    <button class="player2">Player 2</button>
-    <button class="reset">Reset</button>
+    <button id="player1">Player 1</button>
+    <button id="player2">Player 2</button>
+    <button id="reset">Reset</button>
   </div>
-
-
- <table>
-   <h1>
-     <div>Tic</div>
-     <div>Tac</div>
+  
+  
+  <table>
+    <h1>
+      <div>Tic</div>
+      <div>Tac</div>
      <div>Toe</div>
    </h1>
    <tr>
      <td>x</td>
      <td class="vertical" >x</td>
      <td>x</td>
-   </tr>
-   <tr>
-     <td class="horizontal">o</td>
-     <td class="vertical horizontal">o</td>
-     <td class="horizontal">o</td>
-   </tr>
-   <tr>
-     <td>x</td>
-     <td class="vertical" >x</td>
-     <td>x</td>
-   </tr>
-</table> 
-
+    </tr>
+    <tr>
+      <td class="horizontal">o</td>
+      <td class="vertical horizontal">o</td>
+      <td class="horizontal">o</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td class="vertical" >x</td>
+      <td>x</td>
+    </tr>
+  </table> 
+  
+  <script type="text/javascript" src="board.js"></script>
 </body>
 </html>
