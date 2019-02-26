@@ -6,7 +6,9 @@ h1{
   padding:20px;
 
 }
-
+.scoreboard{
+  text-align:center;
+}
 
 td{
   width:100px;
