@@ -41,7 +41,20 @@ function resetBoard(){
 
 function togglePiece(){
   //places x or o in whereever it is clicked
+  var piece = true;
+  if (piece){
+    !piece;
+    return 'o'
+  } else {
+    
+  }
+
   return 'O';
+}
+
+function placePiece(){
+  //update html and place the current piece
+  playerTurn();
 }
 
 function playerTurn(){
