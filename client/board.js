@@ -26,11 +26,15 @@ buttons.resetButton.addEventListener('click', function(){
 
 function checkWinner(){
   if (score.player1 === 5){
-    alert('Player 1 is the winner')
+    // alert('Player 1 is the winner');
+    confirm("resetboard?");
+    resetBoard();
   } else if (score.player2 === 5) {
-    alert('Player 2 is the winner')
+    alert('Player 2 is the winner');
+    resetBoard();
   }
 }
+
 function resetBoard(){
   score = { player1:0,
     player2:0,
