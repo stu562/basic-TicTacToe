@@ -31,7 +31,6 @@ selectors.resetButton.addEventListener('click', function(){
 
 function checkWinner(){
   if (score.player1 === score.winningScore){
-    // alert('Player 1 is the winner');
     confirm("Player 1 is the winner! Play again?");
     resetBoard();
   } else if (score.player2 === score.winningScore) {
