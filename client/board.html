@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TTT board</title>
     <link rel="stylesheet" type="text/css" href="board.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   </head>
-
+  
   <body>
     <div class="scoreboard">
       <div>
@@ -19,15 +23,19 @@
       <button id="player2">Player 2</button>
       <button id="reset">Reset</button>
     </div>
-  
-    <div><h2 class="playerTurn">It's X turn!</h2></div>
-  
-  <table>
-    <h1>
-      <div class="colorChanger">Tic</div>
-      <div class="colorChanger">Tac</div>
-     <div class="colorChanger">Toe</div>
-   </h1>
+    
+    <div>
+      <h2 class="playerTurn">
+        Who's turn is it?
+      </h2>
+  </div>
+    <button class="button-elem">It's O turn!</button>
+    <table>
+      <h1>
+        <div class="colorChanger">Tic</div>
+        <div class="colorChanger">Tac</div>
+        <div class="colorChanger">Toe</div>
+      </h1>
    <tr>
      <td>x</td>
      <td class="vertical" >x</td>
@@ -44,7 +52,6 @@
       <td>x</td>
     </tr>
   </table> 
-  
   <script type="text/javascript" src="board.js"></script>
   <script type="text/javascript" src="onhover.js"></script>
 </body>

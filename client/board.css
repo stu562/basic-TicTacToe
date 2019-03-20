@@ -10,15 +10,15 @@ h1{
   text-align:center;
   padding:20px;
 }
-.scoreboard{
-  text-align:center;
-}
 
 td{
   width:100% rem;
   height:100% rem;
   font-size:50px;
   text-align: center;
+}
+.scoreboard{
+  text-align:center;
 }
 .vertical{
   border-left:1px solid white;

@@ -15,7 +15,7 @@ function handlesColorChange(){
       this.style.color = randomColor();
     })
     titleWords[i].addEventListener("mouseout", function(){
-      this.style.color = "black";
+      this.style.color = "white";
     })
   }
 }
