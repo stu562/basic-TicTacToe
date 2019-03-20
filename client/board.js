@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  
+})
+
+
+
 var selectors = {
   player1Button: document.getElementById('player1'),
   player2Button: document.getElementById('player2'),
